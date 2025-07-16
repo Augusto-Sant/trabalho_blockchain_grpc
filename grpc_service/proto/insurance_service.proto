@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package insurance;
+
+// Request to register a new insurance entry
+message InsuranceRequest {
+  string id = 1;
+  float value = 2;
+}
+
+// Response after registering an insurance
+message InsuranceResponse {
+  bool success = 1;
+  string id = 2;
+}
+
+// Data structure for a single insurance entry
+message InsuranceData {
+  string id = 1;
+  float value = 2;
+  string created_at = 3; // <-- This is important and was missing
+}
+
+// Empty request message for listing
+message Empty {}
+
+// Response containing all insurance entries
+message InsuranceList { repeated InsuranceData insurances = 1; }
+
+// The insurance service definition
+service InsuranceService {
+  rpc RegisterInsurance(InsuranceRequest) returns (InsuranceResponse);
+  rpc GetAllInsurances(Empty) returns (InsuranceList);
+}

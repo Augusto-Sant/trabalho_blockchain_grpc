@@ -1,0 +1,8 @@
+uvicorn
+fastapi
+grpcio
+protobuf
+grpcio-tools
+sqlalchemy
+web3
+asyncpg
