@@ -1,55 +1,33 @@
+# 🧠 Sistema Distribuído com REST e gRPC
 
-start api
-python rest_api/app/main.py
+Projeto que implementa um sistema distribuído com múltiplos serviços integrados via REST e gRPC, utilizando Docker para facilitar o ambiente de desenvolvimento.
 
-start grpc server
-python grpc_service/main.py
+---
 
-banco distribuido:
-docker compose up lá
+Rode o banco com docker compose up, e api e server grpc rodando os main.py de cada um respectivamente.
 
-iron
+## 🚀 Execução
 
-2.
+1. Crie e ative o ambiente virtual:
+```bash
+   python3 -m venv venv
+   source venv/bin/activate
+````
 
-walk
+2. Instale as dependências:
 
-3.
+```bash
+pip install -r requirements.txt
+```
 
-chalk
+---
 
-4.
+## 🛠️ Tecnologias Utilizadas
 
-knife
+* Python
+* FastAPI
+* gRPC
+* Docker
+* PostgreSQL
+* OpenAPI
 
-5.
-
-buffalo
-
-6.
-
-hotel
-
-7.
-
-peace
-
-8.
-
-fury
-
-9.
-
-solve
-
-10.
-
-glad
-
-11.
-
-metal
-
-12.
-
-inherit
